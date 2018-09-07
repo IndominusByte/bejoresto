@@ -3,19 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Black+Ops+One');
 @import url('https://fonts.googleapis.com/css?family=Chewy|Yatra+One');
 
-
-/*TABS*/<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121809054-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-121809054-1');
-</script>
-
-
-
 @media only screen and (max-device-width: 1366px) {
   .caption-opening span{
     position: absolute;
