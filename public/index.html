@@ -24,12 +24,12 @@
         <div class="slider about-slider">
           <div>
             <p class="image is-4by5">
-              <img src="image/promo/2.jpeg" style="width:88%; height:auto; margin: auto; margin-top:0; position: absolute; ">
+              <img src="image/promo/2.jpg" style="width:88%; height:auto; margin: auto; margin-top:0; position: absolute; ">
             </p> 
           </div>
           <div>
             <p class="image is-4by5">
-              <img src="image/promo/3.jpeg" style="width:88%; height:auto; margin: auto; margin-top:0; position: absolute; ">
+              <img src="image/promo/3.jpg" style="width:88%; height:auto; margin: auto; margin-top:0; position: absolute; ">
             </p> 
           </div>
         </div>
@@ -280,7 +280,7 @@
   <div class="columns">
     <div class="column">
       <div class="rounded-img-container">
-        <img class="rounded-img" src="image/food/burger.jpeg">
+        <img class="rounded-img" src="image/food/burger.jpg">
       </div>
       <p class="has-text-centered is-size-4" style="margin: auto; padding-top:20px; padding-bottom:20px;"><b>Cuisene</b></p>
       <p class="has-text-centered" style="margin: auto;">
@@ -290,7 +290,7 @@ Our restaurant and bar an endless array of options for you to indulge in. Indone
   </div>
   <div class="column">
       <div class="rounded-img-container">
-        <img class="rounded-img" src="image/kopi.jpeg">
+        <img class="rounded-img" src="image/kopi.jpg">
       </div>
       <p class="has-text-centered is-size-4" style="margin: auto; padding-top:20px; padding-bottom:20px;"><b>Coffee</b></p>
       <p class="has-text-centered" style="margin: auto;">
@@ -410,42 +410,19 @@ Drifting with routines makes dizzy so add another dizziness with clasic margarit
     </div>
 </footer>
 
-<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 <script src="js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap"async defer></script>
-<script>
-//COLLAPSE
-$('[data-target-collapse]').each(function () {                     
-  var $this = $(this);                                             
-  var $toggle = $this.data('target-collapse');                     
-  if ($this.hasClass('active')) {                                  
-    $('[data-collapse="' + $toggle + '"]').stop().slideDown();     
-  }                                                                
-  $this.on('click', function () {                                  
-    $this.toggleClass('active');                                   
-    $('[data-collapse="' + $toggle + '"]').stop().slideToggle(300);
-  });                                                              
-});     
-</script>
+<script src="js/collapse.js"></script>
 <script src='js/jquery.min.js'></script>
-<script  src="js/index.js"></script>
-<script  src="js/slider.js"></script>
-<script  src="js/bulma.js"></script>
-<script  src="js/function.js"></script>
+<script src="js/index.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/bulma.js"></script>
+<script src="js/function.js"></script>
+<script src="js/tabs.js"></script>
+<script src="aos-master/dist/aos.js"></script>
 <script>
-//TABS
-$('#tabs li').on('click', function() {
-var tab = $(this).data('tab');
-$('#tabs li').removeClass('is-active');
-$(this).addClass('is-active');
-$('#tab-content div').removeClass('is-active');
-$('div[data-content="' + tab + '"]').addClass('is-active test');
-});
-</script>
-   <script src="aos-master/dist/aos.js"></script>
-   <script>
      AOS.init();
-   </script>
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121809054-1"></script>
 <script>
@@ -455,57 +432,10 @@ $('div[data-content="' + tab + '"]').addClass('is-active test');
 
   gtag('config', 'UA-121809054-1');
 </script>
-
 <script src='js/js.cookie.min.js'></script>
 <script src='js/bootstrap.min.js'></script>
-
-<script>                                                
-var hours = 1; // Reset when storage is more than 1hours
-var now = new Date().getTime();                         
-var setupTime = localStorage.getItem('setupTime');      
-if (setupTime == null) {                                
-     $(window).on('load',function(){                    
-        $( "#modal1" ).modal('show');                    
-        localStorage.setItem('setupTime', now)          
-        });                                             
-                                                        
-} else {                                                
-    if(now-setupTime > hours*60*60*1000) {              
-        localStorage.clear();                           
-    }                                                   
-}                                                       
-</script>                                               
-  <script>
-    $(document).on('keyup',function(evt) {
-    if (evt.keyCode == 27) {
-       $('#modal1').modal('hide');
-    }
-});
-  </script>
-
-<script>                                                
-var hours = 1; // Reset when storage is more than 1hours
-var now = new Date().getTime();                         
-var setupTime = localStorage.getItem('setupTime');      
-if (setupTime == null) {                                
-     $(window).on('load',function(){                    
-        $( "#modal" ).modal('show');                    
-        localStorage.setItem('setupTime', now)          
-        });                                             
-                                                        
-} else {                                                
-    if(now-setupTime > hours*60*60*1000) {              
-        localStorage.clear();                           
-    }                                                   
-}                                                       
-</script>                                               
-  <script>
-    $(document).on('keyup',function(evt) {
-    if (evt.keyCode == 27) {
-       $('#modal').modal('hide');
-    }
-});
-  </script>
+<script src="js/modal.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </body>
 </html>
 
