@@ -204,16 +204,16 @@
 }
 .bgimg-2 {
   /*background-image: url("https://firebasestorage.googleapis.com/v0/b/bejo-da163.appspot.com/o/image%2Fbaruu3.jpg?alt=media&token=31d1b034-135d-4fd7-bdfb-f0face3583b4");*/
-  background-image: url("../image/gambar-atas.jpeg");
+  background-image: url("../image/gambar-atas.jpg");
   min-height: 650px;
 }
 .bgimg-3 {
-  background-image: url("../image/paral3.jpeg");
+  background-image: url("../image/paral3.jpg");
   /*background-image: url("https://firebasestorage.googleapis.com/v0/b/bejo-da163.appspot.com/o/image%2Fbaru4.jpg?alt=media&token=d8e0c487-7bc4-4c64-921a-d224eff2a0d4");*/
   min-height: 400px;
 }
 .bgimg-4 {
-  background-image: url("../image/paral2.jpeg");
+  background-image: url("../image/paral2.jpg");
   /*background-image: url("https://firebasestorage.googleapis.com/v0/b/bejo-da163.appspot.com/o/image%2Fbaru2.jpg?alt=media&token=27e6f16c-a8ab-4a63-a958-bcee863feeac");*/
   min-height: 300px;
 }
