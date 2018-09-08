@@ -1,0 +1,27 @@
+[debug] [2018-09-08T04:24:31.219Z] ----------------------------------------------------------------------
+[debug] [2018-09-08T04:24:31.221Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2018-09-08T04:24:31.221Z] CLI Version:   3.19.3
+[debug] [2018-09-08T04:24:31.221Z] Platform:      linux
+[debug] [2018-09-08T04:24:31.222Z] Node Version:  v8.10.0
+[debug] [2018-09-08T04:24:31.222Z] Time:          Sat Sep 08 2018 12:24:31 GMT+0800 (WITA)
+[debug] [2018-09-08T04:24:31.222Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-09-08T04:24:31.267Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-09-08T04:24:31.267Z] > authorizing via signed-in user
+[debug] [2018-09-08T04:24:31.269Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-09-08T04:24:31.269Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/ATPzz4zevigEaQCHgFvHdP8B4Bt1CX5ebXlGAmjaKDE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Sep 08 2018 12:24:31 GMT+0800 (WITA)
+[debug] [2018-09-08T04:24:31.547Z] <<< HTTP RESPONSE 200
+[debug] [2018-09-08T04:24:31.622Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/bejo-da163  
+  
+ Sat Sep 08 2018 12:24:31 GMT+0800 (WITA)
+[debug] [2018-09-08T04:24:43.001Z] <<< HTTP RESPONSE 404
+[debug] [2018-09-08T04:24:43.002Z] <<< HTTP RESPONSE BODY
+[debug] [2018-09-08T04:24:43.005Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Sat Sep 08 2018 12:24:43 GMT+0800 (WITA)
